@@ -2,8 +2,8 @@ const repeatString = function(string, num) {
   if (num >= 0) {
     let repeatedString = "";
     while (num > 0) {
-      //
-      
+      repeatedString += string;
+      num--;
     }
     return repeatedString;
   }
