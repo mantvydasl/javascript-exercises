@@ -1,6 +1,7 @@
 const sumAll = function(num1, num2) {
     if (typeof num1 != "number" || typeof num2 != "number" ||
-        num1 < 0 || num2 < 0
+        num1 < 0 || num2 < 0 ||
+        Math.round(num1) != num1 || Math.round(num2) != num2
     ) {
         return "ERROR";
     }
