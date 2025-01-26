@@ -2,7 +2,10 @@ const removeFromArray = function(array, ...valuesToRemove) {
     let indexToRemove;
     for (const value of valuesToRemove) {
         indexToRemove = array.indexOf(value);
-        array.splice(indexToRemove, 1);
+        while (indexToRemove !== -1) {
+            array.splice(indexToRemove, 1);
+            indexToRemove = array.indexOf(value);
+        }
     }
     return array;
 };
