@@ -1,4 +1,4 @@
-const repeatString = function(myString, timesToRepeat) {
+const repeatString = function(string, num) {
 
 };
 
