@@ -1,4 +1,7 @@
 const sumAll = function(num1, num2) {
+    if (typeof num1 != "number" || typeof num2 != "number") {
+        return "ERROR";
+    }
     const start = num1 < num2 ? num1 : num2;
     const end   = num1 > num2 ? num1 : num2;
     let sum = 0;
