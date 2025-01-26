@@ -2,9 +2,7 @@ const repeatString = function(string, num) {
   let repeatedString = "";
   if (num < 0) {
     repeatString = "ERROR";
-  }
-  if (num >= 0) {
-    repeatedString = "";
+  } else {
     while (num > 0) {
       repeatedString += string;
       num--;
