@@ -19,13 +19,9 @@ const power = function(a, b) {
 };
 
 const factorial = function(a) {
-	if (a <= 1) {
-    return 1;
-  }
-  let fact = a;
-  while (a > 1) {
-    a--;
-    fact *= a;
+	let fact = 1;
+  for (let i = a; i > 0; i--) {
+    fact *= i;
   }
   return fact;
 };
