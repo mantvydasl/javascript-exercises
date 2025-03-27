@@ -18,8 +18,16 @@ const power = function(a, b) {
 	return a**b;
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	if (a <= 1) {
+    return 1;
+  }
+  let fact = a;
+  while (a > 1) {
+    a--;
+    fact *= a;
+  }
+  return fact;
 };
 
 // Do not edit below this line
