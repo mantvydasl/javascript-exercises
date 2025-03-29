@@ -6,8 +6,8 @@ const palindromes = function (str) {
         arrForward.push(c);
     }
   }
-  let arrReverse = arr.slice().reverse();
-  return arr.every((value, index) => value === arrReverse[index]);
+  let arrReverse = arrForward.slice().reverse();
+  return arrForward.every((value, index) => value === arrReverse[index]);
 };
 
 // Do not edit below this line
