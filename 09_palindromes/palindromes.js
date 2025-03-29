@@ -2,7 +2,7 @@ const palindromes = function (str) {
   let arr = str.toLowerCase().split('');
   let arrForward = [];
   for (let c of arr) {
-    if (c.toLowerCase() != c.toUpperCase()) {
+    if (c.toLowerCase() != c.toUpperCase() || !isNaN(parseInt(c, 10))) {
         arrForward.push(c);
     }
   }
